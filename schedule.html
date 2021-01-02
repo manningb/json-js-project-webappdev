@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>CHI 2020 Program</title>
+</head>
+<body>
+    <header>
+        <div class="left"><a href=""><img id="chilogo" src="icon.png"></a></div>
+        <div class="right"><h1>CHI 2020 - Program of Events</h1><p id="chiInfo"><b>What is CHI?</b> The ACM CHI Conference on Human Factors in Computing Systems 
+            is the premier international conference of Human-Computer Interaction. CHI  – 
+            pronounced ‘kai’ – is a place where researchers and practitioners gather from 
+            across the world to discuss the latest in interactive technology. We are a multicultural 
+            community from highly diverse backgrounds who together investigate and design new and creative 
+            ways for people to interact using technology. <a href="https://chi2020.acm.org/" target="_blank">Read more</a>
+        </p></div>
+    
+    </header>
+    
+    <form onsubmit="return false" id="initial">
+        <h2>Please choose a date and time below:</h2>
+        <p id="dateHead"><b>Select a date (required)</b></h3>
+        <p id="dateChoice"></p>
+        <div id="dates"></div>
+        <p id="timeHead"></p>
+        <p id="timeChoice"></p>
+        <div id="times"></div>
+        <div id="submitDiv"><button id="submitB" onclick="getData(0)">Submit</button></div>
+        
+    </form>
+
+    <div id="content">
+    <h2 id="dateSubmitted"></h2>
+    <form id="paper">
+        <h4><u>Filter by Type</u></h4>
+        <input type="radio" checked="checked" onclick="getData(this.value)" id="all" name="paper" value=0>
+        <label for="all">All</label>
+        <input type="radio" onclick="getData(this.value)" id="paperOnly" name="paper" value=1>
+        <label for="paperOnly">Paper Only</label>
+        <input type="radio" onclick="getData(this.value)" id="paperNot" name="paper" value=2>
+        <label for="paperNot">Excluding Paper</label>
+    </form>
+    <div id="main">
+        <div id="dateContainer">
+    </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
