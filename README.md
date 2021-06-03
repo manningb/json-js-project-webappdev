@@ -17,7 +17,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You can access a live version of the website [here](http://manningb.com/json-js-project-webappdev/).
+You can access a live version of the website [here](https://manningb.github.io/json-js-project-webappdev/).
 
 <!-- CONTACT -->
 ## Contact
